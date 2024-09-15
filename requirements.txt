@@ -3,4 +3,3 @@ tensorflow
 streamlit
 nltk
 pandas
-json
