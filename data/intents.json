@@ -1,0 +1,156 @@
+{"intents": [
+    {"tag": "salutation",
+     "patterns": ["Bonjour", "Salut", "Coucou","Bonsoir", "Hello", "Hey"],
+     "responses": ["Bonjour ! Comment puis-je vous aider à planifier votre voyage au Gabon ?", "Salut ! Que puis-je faire pour vous aujourd'hui ?"],
+     "context": [""]
+    },
+    {"tag": "aurevoir",
+    "patterns": ["Bye", "Au revoir", "à plus", "à plus tard", "à la prochaine","Bonne journéé", "Bonne soirée"],
+    "responses": ["Au revoir", "Bonne journée", "À la prochaine", "À plus", "Portez vous bien"],
+    "context": [""]
+   },
+   {"tag": "remerciment",
+    "patterns": ["Merci", "Merci pour vos reponses", "Merci pour votre aide", "Je vous remercie", "Je suis satisfait"],
+    "responses": ["Ravie de vous avoir aider", "Je vous en prie"],
+    "context": [""]
+   },
+    {"tag": "pas_question",
+     "patterns": [],
+     "responses": ["Désolé, je vous comprends pas", "S'il vous plait, donnez moi plus d'informartion", "Veuillez reformuler votre question svp"],
+     "context": [""]
+    },
+    {
+        "tag": "destination",
+        "patterns": ["Quelles sont les meilleures destinations au Gabon ?", "Je cherche un lieu touristique au Gabon", "Quels sont les sites touristiques à visiter ?", "Je cherche un lieu touristique","Quelles sont les meilleures destinations ?"],
+        "responses": ["Les destinations populaires incluent : la Pointe Denis, le parc national de Lopé, le parcnational des MONTS DE CRISTAL, le parc national d’Akanda, le parc national de Loango, le parc national de Pongara, et Libreville."],
+        "context": [""]
+      },
+      {
+        "tag": "loango",
+        "patterns": ["Que puis-je faire au parc national de Loango ?", "Quelles activités sont proposées à Loango ?", "Que fait on au parc de Loango ?", "Qu'est qu'on propose à Loango ?"],
+        "responses": ["Au parc national de Loango, vous pouvez faire des safaris pour observer la faune sauvage, des balades en bateau sur les lagunes, et des randonnées dans la forêt tropicale."],
+        "context": [""]
+      },
+      {
+        "tag": "pointe_denis",
+        "patterns": ["Que puis-je faire à la pointe denis ?", "Quelles activités sont proposées à la pointe denis ?", "Que fait on à la pointe denis ?", "Qu'est qu'on propose à la pointe denis ?"],
+        "responses": ["À la pointe denis, vous pouvez faire la Plongée, sports nautiques, détente sur les plages de sable blanc et observation de la faune marine."],
+        "context": [""]
+      },
+      {
+        "tag": "pongara",
+        "patterns": ["Quelles sont les activités à Pongara ?", "Que faire au parc national de Pongara ?", "Que fait on au parc Pongara ?", "Qu'est qu'on propose à Pongara ?"],
+        "responses": ["À Pongara, vous pouvez observer les tortues marines, profiter des plages isolées, et explorer les mangroves en kayak."],
+        "context": [""]
+      },
+      {
+        "tag": "lope",
+        "patterns": ["Quelles sont les activités à la lopé ?", "Que faire au parc national de la lopé ?", "Que fait on au parc de la Lopé ?", "Qu'est qu'on propose à la Lopé ?"],
+        "responses": ["À la Lopé, vous pouvez faire du Safaris pour observer les éléphants, buffles et primates, ainsi que randonnées dans la forêt tropicale et les savanes."],
+        "context": [""]
+      },
+      {
+        "tag": "monts_cristal",
+        "patterns": ["Que puis-je faire aux Monts cristal ?", "Quelles activités sont proposées aux Monts cristal ?" , "Que fait on aux Monts cristal ?", "Qu'est qu'on propose aux Monts cristal"],
+        "responses": ["Aux Monts cristal, vous pouvez faire des Randonnées, exploration des cascades et observation de la flore endémique unique."],
+        "context": [""]
+      },
+      {
+        "tag": "akanda",
+        "patterns": ["Quelles sont les activités à akanda ?", "Que faire au parc national d'akanda ?" , "Que fait on au parc d'Akanda ?", "Qu'est qu'on propose à Akanda ?"],
+        "responses": ["À Akanda, vous pouvez faire du Kayak dans les mangroves, observation des oiseaux migrateurs et relaxation sur les plages isolées."],
+        "context": [""]
+      },
+      {
+        "tag": "libreville",
+        "patterns": ["Que puis-je faire à Libreville ?", "Quelles activités sont proposées à Libreville ?", "Que fait on à Libreville ?", "Qu'est qu'on propose à Libreville"],
+        "responses": ["À Libreville, vous pouvez visiter le Musée National des Arts et Traditions, explorer le marché Mont-Bouët ou la Baie des rois, et profiter des plages comme la plage du Cap Estérias."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_loango",
+        "patterns": ["Pouvez-vous me proposer un itinéraire pour Loango ?", "J'ai besoin d'un itinéraire pour Loango", "Propose moi un parcours pour le parc national de Loango.", "Fais moi un circuit pour Loango stp"],
+        "responses": ["Un itinéraire pour Loango pourrait inclure : Jour 1 : Arrivée et safari ; Jour 2 : Exploration des lagunes en bateau ; Jour 3 : Randonnée dans la forêt tropicale."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_pointe_denis",
+        "patterns": ["Pouvez-vous me proposer un itinéraire pour Loango ?", "J'ai besoin d'un itinéraire pour la pointe denis", "Propose moi un parcours pour la pointe denis.", "Fais moi un circuit pour la pointe denis stp"],
+        "responses": ["Un itinéraire pour la poite denis pourrait inclure : Jour 1 : Sports nautiques ; Jour 2 : Détente sur les plages et faire la Plongée ; Jour 3 : Explorer la faune marine."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_lope",
+        "patterns": ["Pouvez-vous me proposer un itinéraire pour la Lopé ?", "J'ai besoin d'un itinéraire pour la Lopé", "Propose moi un parcours pour le parc national de la Lopé.", "Fais moi un circuit pour la Lopé stp"],
+        "responses":  ["Un itinéraire pour la Lopé pourrait inclure : Jour 1 : Safari ; Jour 2 : Exploration des lagunes en bateau ; Jour 3 : Randonnée dans la forêt tropicale."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_monts_cristal",
+        "patterns": ["Pouvez-vous me proposer un itinéraire pour les Montq cristal ?", "J'ai besoin d'un itinéraire pour les Monts cristal", "Propose moi un parcours pour les Monts cristal.", "Fais moi un circuit pour les Monts crristal stp"],
+        "responses":  ["Un itinéraire pour les Monts cristal pourrait inclure : Jour 3 : Randonnée dans la forêt tropicale ; Jour 2 : Exploration des cascades."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_akanda",
+        "patterns": ["Pouvez-vous me proposer un itinéraire pour Akanda ?", "J'ai besoin d'un itinéraire pour Akanda", "Propose moi un parcours pour le parc national d'Akanda.", "Fais moi un circuit pour Akanda stp"],
+        "responses": ["Un itinéraire pour Akanda pourrait inclure : Jour 1 : Kayak dans les mangroves ; Jour 2 : Observation des oiseaux migrateurs ; Jour 3 : Relaxation sur les plages."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_pongara",
+        "patterns": ["Proposez-moi un itinéraire pour Pongara", "Itinéraire pour Pongara ?", "Propose moi un parcours pour le parc national de Pongagara.", "Fais moi un circuit pour Pongara stp"],
+        "responses": ["Un itinéraire pour Pongara pourrait inclure : Jour 1 : Visite des plages et observation des tortues ; Jour 2 : Excursion en kayak dans les mangroves ; Jour 3 : Randonnée dans le parc."],
+        "context": [""]
+      },
+      {
+        "tag": "itineraire_libreville",
+        "patterns": ["Pouvez-vous me donner un itinéraire pour Libreville ?", "Je cherche un itinéraire pour Libreville", "Propose moi un parcours pour Libreville.", "Fais moi un circuit pour Libreville stp"],
+        "responses": ["Un itinéraire pour Libreville pourrait inclure : Jour 1 : Visite du Musée National ; Jour 2 : Détente à la plage du Cap Estérias ; Jour 3 : Exploration du marché Mont-Bouët."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_loango",
+        "patterns": ["Comment puis-je faire une réservation pour Loango ?", "Je veux réserver pour Loango", "Dis moi comment réserver pour le parc national de Loango.", "Je veux prendre une réservation pour Loango stp"],
+        "responses": ["Pour réserver à Loango, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_pointe_denis",
+        "patterns":  ["Comment puis-je faire une réservation pour la pointe denis ?", "Je veux réserver pour la pointe denis", "Dis moi comment réserver pour la pointe denis.", "Je veux prendre une réservation pour la pointe denis stp"],
+        "responses": ["Pour réserver à la pointe denis, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_lope",
+        "patterns":  ["Comment puis-je faire une réservation pour la Lopé ?", "Je veux réserver pour la Lopé", "Dis moi comment réserver pour le parc national de la Lopé.", "Je veux prendre une réservation pour la Lopé stp"],
+        "responses":  ["Pour réserver à la Lopé, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_monts_cristal",
+        "patterns":  ["Comment puis-je faire une réservation pour les Monts cristal ?", "Je veux réserver pour les Monts cristal", "Dis moi comment réserver pour les Monts cristal.", "Je veux prendre une réservation pour les Monts cristal stp"],
+        "responses":  ["Pour réserver aux Monts cristal, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_akanda",
+        "patterns":  ["Comment puis-je faire une réservation pour Akanda ?", "Je veux réserver pour Akanda", "Dis moi comment réserver pour le parc national d'Akanda.", "Je veux prendre une réservation pour Akanda stp"],
+        "responses": ["Pour réserver à Akanda, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_pongara",
+        "patterns":  ["Comment puis-je faire une réservation pour Pongara ?", "Je veux réserver pour Pongara", "Dis moi comment réserver pour le parc national de Pongara.", "Je veux prendre une réservation pour Pongara stp"],
+        "responses": ["Pour réserver à Pongara, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      },
+      {
+        "tag": "reservation_libreville",
+        "patterns":  ["Comment puis-je faire une réservation pour Libreville ?", "Je veux réserver pour Libreville", "Dis moi comment réserver pour le parc national de Libreville.", "Je veux prendre une réservation pour Libreville stp"],
+        "responses": ["Pour réserver à Libreville, voici les différents contact : Tèl : +241 66 00 00 00 ; Facebook : https://www.facebook.com/ken.kleven/ ; Instagram : https://www.instagram.com/ken.kleven/."],
+        "context": [""]
+      }
+    ]
+  }
+  
