@@ -66,14 +66,22 @@ if 'history' not in st.session_state:
     st.session_state.history = []
 
 # Fonction pour afficher la discussion dans un style de chat
+# Fonction pour afficher la discussion dans un style de chat
 def display_chat():
+    # Obtenir le thème actuel (dark ou light)
+    theme = st.get_option("theme.base")
+
+    # Définir les couleurs de texte en fonction du thème
+    user_text_color = "black"
+    bot_text_color = "black"
+
     chat_history = ""
     for message, sender in st.session_state.history:
         if sender == 'user':
             # Afficher le message de l'utilisateur dans une bulle verte
             chat_history += f"""
             <div style='text-align: right;'>
-                <div style='background-color: #dcf8c6; border-radius: 10px; padding: 10px; margin: 5px; display: inline-block; max-width: 70%; word-wrap: break-word;'>
+                <div style='background-color: #dcf8c6; color: {user_text_color}; border-radius: 10px; padding: 10px; margin: 5px; display: inline-block; max-width: 70%; word-wrap: break-word;'>
                     <strong>Vous:</strong> {message}
                 </div>
             </div>
@@ -82,12 +90,13 @@ def display_chat():
             # Afficher le message du bot dans une bulle grise
             chat_history += f"""
             <div style='text-align: left;'>
-                <div style='background-color: #f1f0f0; border-radius: 10px; padding: 10px; margin: 5px; display: inline-block; max-width: 70%; word-wrap: break-word;'>
+                <div style='background-color: #f1f0f0; color: {bot_text_color}; border-radius: 10px; padding: 10px; margin: 5px; display: inline-block; max-width: 70%; word-wrap: break-word;'>
                     <strong>Bot:</strong> {message}
                 </div>
             </div>
             """
     st.markdown(chat_history, unsafe_allow_html=True)
+
 
 # Demander l'entrée de l'utilisateur
 user_input = st.text_input("Vous: ", "Tapez votre message ici...")
